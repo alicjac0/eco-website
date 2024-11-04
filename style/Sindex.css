@@ -1,0 +1,46 @@
+body{
+     margin: 0;
+     background-color: gray;
+     --fren-green: #4B7F52; 
+     --mantis: #7DD181;
+     --celedon: #96E8BC;
+     --lighter-celedon: #B6F9C9;
+     --nyanza: #C9FFE2;
+}
+
+.logo{ 
+     background-color: var(--mantis);
+     height: 4em;
+     width: 4em;
+     border: 2px solid hsl(106, 36%, 54%);
+     border-radius: 50%;
+     
+   justify-self: flex-start;
+}
+nav{
+     background-color: rgba(240, 248, 255, 0.575);
+     height: 10vh;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+}
+nav a{
+     color: black;
+     text-decoration: none;
+     padding: 30px;
+     
+     
+     
+}
+.glass-text-box{
+     background-color: white;
+     opacity: 16%;
+     border: 2px solid white 10%;
+     border-radius: 15px;
+}
+header{
+     background-color: var(--fren-green);
+     height: 100vh;
+}
+
