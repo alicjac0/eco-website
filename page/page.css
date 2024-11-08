@@ -3,9 +3,14 @@ a {
   text-decoration: none;
 }
 * {
-  box-sizing: content-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
   margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
