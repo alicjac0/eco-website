@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="page.css" />
   </head>
   <body>
+    <!-- HEADER -->
     <div id="header-placeholder"></div>
     <script>
       fetch('/components/header.html')
@@ -21,6 +22,24 @@
         })
         .catch((error) => {
           console.error('Error loading header:', error)
+        })
+    </script>
+
+    <!-- COMPONENT JEDEN -->
+    <div id="comp_1-placeholder"></div>
+    <script>
+      fetch('/components/comp_1.html')
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`)
+          }
+          return response.text()
+        })
+        .then((data) => {
+          document.getElementById('comp_1-placeholder').innerHTML = data
+        })
+        .catch((error) => {
+          console.error('Error loading comp_1:', error)
         })
     </script>
   </body>
